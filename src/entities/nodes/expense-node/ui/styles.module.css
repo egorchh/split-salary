@@ -1,7 +1,7 @@
 .node {
-	padding: 25px;
+	padding: 15px 25px 25px;
 	border: 1px solid rgb(225, 225, 225);
 	border-radius: 12px;
 	background-color: white;
-	min-width: 300px;
+	overflow: hidden;
 }

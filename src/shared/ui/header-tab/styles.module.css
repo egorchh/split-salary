@@ -1,0 +1,21 @@
+.tab {
+	position: relative;
+	padding: 8px 12px;
+	border: 1px solid var(--palette-gray-5);
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+}
+
+.active::after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: var(--palette-white);
+	width: 100%;
+}
