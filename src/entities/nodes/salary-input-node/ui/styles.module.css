@@ -1,0 +1,24 @@
+.node {
+	padding: 15px 25px 25px;
+	border: 1px solid rgb(225, 225, 225);
+	border-radius: 12px;
+	background-color: white;
+	min-width: 300px;
+	overflow: hidden;
+}
+
+.input {
+	width: 100%;
+}
+
+/*.node::after {*/
+/*	position: absolute;*/
+/*	bottom: 1px;*/
+/*	left: 1px;*/
+/*	content: '';*/
+/*	height: 10px;*/
+/*	width: calc(100% - 2px);*/
+/*	background-color: beige;*/
+/*	border-bottom-right-radius: 16px;*/
+/*	border-bottom-left-radius: 16px;*/
+/*}*/

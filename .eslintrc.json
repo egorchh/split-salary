@@ -1,0 +1,47 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"plugins": [
+		"react-hooks",
+		"react-refresh",
+		"feature-sliced-design-validator",
+		"simple-import-sort",
+		"@typescript-eslint"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2020
+	},
+	"rules": {
+		"react-refresh/only-export-components": [
+			"warn",
+			{ "allowConstantExport": true }
+		],
+		"indent": ["error", "tab"],
+		"object-curly-spacing": ["error", "always"],
+		"jsx-quotes": ["error", "prefer-single"],
+		"quotes": ["error", "single"],
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+		"comma-dangle": ["error", "never"],
+		// FSD
+		"feature-sliced-design-validator/path-checker": [
+			"error",
+			{ "alias": "@" }
+		],
+		"feature-sliced-design-validator/public-api-imports": [
+			"error",
+			{
+				"alias": "@",
+				"testFilePatterns": ["**/*.cspec.*"]
+			}
+		],
+		"feature-sliced-design-validator/layer-imports": [
+			"error",
+			{ "alias": "@" }
+		]
+	},
+	"ignorePatterns": ["dist", "*.html", "*.json"]
+}

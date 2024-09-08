@@ -1,0 +1,15 @@
+.header {
+	position: relative;
+	width: 100%;
+	min-height: 20px;
+	padding: 20px 20px 0 150px;
+	background-color: var(--palette-white);
+	border-bottom: 1px solid var(--palette-gray-5);
+}
+
+.logo {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
